@@ -1,0 +1,127 @@
+/* === Font Global === */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1b4332;
+}
+
+/* === Navbar === */
+.navbar {
+    background: #ffffff;
+    color: #14532d;
+}
+.nav-link {
+    color: #14532d;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.nav-link:hover {
+    color: #16a339;
+    text-shadow: 0 0 6px rgba(22, 163, 74, 0.3);
+}
+
+/* === Footer === */
+.footer {
+    background: linear-gradient(90deg, #16a34a, #22c55e);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* === Kotak Fitur === */
+.feature-card {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    background: linear-gradient(to bottom right, #f0fdf4, #dcfce7);
+}
+
+/* Ikon di atas setiap card */
+.icon {
+    font-size: 2.5rem;
+    border-radius: 50%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Animasi FadeIn */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .feature-card {
+        margin-bottom: 1rem;
+    }
+}
+/*===== bagian menu sehat ====
+
+/* === Menu Sehat === */
+.menu-card {
+    background: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+.menu-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Gambar di atas card */
+.menu-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Tag kalori */
+.tag {
+    display: inline-block;
+    background: #dcfce7;
+    color: #14532d;
+    padding: 0.3rem 0.8rem;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* ==== food dairy
+
+/* === Food Diary === */
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+th, td {
+    border-bottom: 1px solid #e2e8f0;
+}
+th {
+    font-weight: 600;
+}
+tr:last-child td {
+    border-bottom: none;
+}
+
