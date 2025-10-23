@@ -37,25 +37,21 @@ Route::get('/edukasi-gizi', function () {
     return view('edukasi-gizi');
 })->name('edukasi-gizi');
 
+use App\Http\Controllers\AuthController;
 
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
 
-// Proses form login (sementara belum pakai controller)
-Route::post('/login', function (Request $request) {
-    // Sementara ini hanya simulasi login sederhana
-    $email = $request->input('email');
-    $password = $request->input('password');
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [AuthController::class, 'login'])->name('login.post');
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
-    if ($email === 'admin@nutricare.com' && $password === 'admin123') {
-        return redirect('/dashboard')->with('success', 'Login berhasil!');
-    } else {
-        return back()->with('error', 'Email atau kata sandi salah.');
-    }
-})->name('login.submit');
+//====kebebasan admin====///
+use App\Http\Controllers\EducationController;
 
-// Halaman dashboard contoh (sementara)
-Route::get('/dashboard', function () {
-    return "<h1 style='font-family:sans-serif;text-align:center;margin-top:100px;'>Selamat datang di Dashboard Nutricare!</h1>";
+Route::middleware(['auth', 'admin'])->group(function () {
+    Route::get('/admin/educations', [EducationController::class, 'index'])->name('admin.education.index');
+    Route::get('/admin/educations/create', [EducationController::class, 'create'])->name('admin.education.create');
+    Route::post('/admin/educations', [EducationController::class, 'store'])->name('admin.education.store');
+    Route::get('/admin/educations/{education}/edit', [EducationController::class, 'edit'])->name('admin.education.edit');
+    Route::put('/admin/educations/{education}', [EducationController::class, 'update'])->name('admin.education.update');
+    Route::delete('/admin/educations/{education}', [EducationController::class, 'destroy'])->name('admin.education.destroy');
 });

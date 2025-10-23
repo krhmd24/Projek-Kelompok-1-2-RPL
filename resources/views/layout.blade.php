@@ -26,14 +26,35 @@
             <h1 class="text-2xl font-bold tracking-wide flex items-center gap-2 text-green-800">
                 <span class="text-3xl">🌿</span> NutriCare
             </h1>
-            <ul class="flex gap-6 text-lg"> 
-                <li><a href="/menu-sehat" class="nav-link">Menu Sehat</a></li> 
-                <li><a href="/food-diary" class="nav-link">Food Diary</a></li>
-                <li><a href="/pemantauan-pertumbuhan" class="nav-link">Pemantauan</a></li>
-                <li><a href="/edukasi-gizi" class="nav-link">Edukasi Gizi</a></li>
+            
+            <ul <ul class="flex gap-6 text-lg">
+    <li><a href="/" class="nav-link">Dashboard</a></li>
+    <li><a href="/kalkulator-gizi" class="nav-link">Kalkulator Gizi</a></li>
+    <li><a href="/menu-sehat" class="nav-link">Menu Sehat</a></li> 
+    <li><a href="/food-diary" class="nav-link">Food Diary</a></li>
+    <li><a href="/pemantauan-pertumbuhan" class="nav-link">Pemantauan</a></li>
+    <li><a href="/edukasi-gizi" class="nav-link">Edukasi Gizi</a></li>
 
-                <li><a href="/kalkulator-gizi" class="nav-link">Kalkulator Gizi</a></li>
-                <li><a href="/" class="nav-link">Dashboard</a></li>
+    {{-- Cek apakah user sudah login --}}
+    @auth
+        {{-- Kalau admin, tampilkan juga menu Admin --}}
+        @if(Auth::user()->role === 'admin')
+            <li><a href="/admin/educations" class="nav-link font-semibold text-green-700">Admin Panel</a></li>
+        @endif
+
+        {{-- Tombol Logout --}}
+        <li>
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <button type="submit" class="nav-link">Logout</button>
+            </form>
+        </li>
+    @else
+        {{-- Kalau belum login, tampilkan tombol Login --}}
+        <li><a href="{{ route('login') }}" class="nav-link">Login</a></li>
+    @endauth
+</ul>
+
             </ul>
              
         </div>
