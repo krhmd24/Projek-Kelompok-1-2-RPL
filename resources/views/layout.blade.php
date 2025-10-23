@@ -13,6 +13,9 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
 </head>
 
 <body class="min-h-screen flex flex-col bg-gradient-to-br from-green-100 via-lime-50 to-emerald-100">
@@ -23,11 +26,14 @@
             <h1 class="text-2xl font-bold tracking-wide flex items-center gap-2 text-green-800">
                 <span class="text-3xl">🌿</span> NutriCare
             </h1>
-            <ul class="flex gap-6 text-lg"> <li><a href="/menu-sehat" class="nav-link">Menu Sehat</a></li> <li><a href="/food-diary" class="nav-link">Food Diary</a></li>
+            <ul class="flex gap-6 text-lg"> 
+                <li><a href="/menu-sehat" class="nav-link">Menu Sehat</a></li> 
+                <li><a href="/food-diary" class="nav-link">Food Diary</a></li>
+                <li><a href="/pemantauan-pertumbuhan" class="nav-link">Pemantauan</a></li>
+                <li><a href="/edukasi-gizi" class="nav-link">Edukasi Gizi</a></li>
 
-
-                <li><a href="/" class="nav-link">Dashboard</a></li>
                 <li><a href="/kalkulator-gizi" class="nav-link">Kalkulator Gizi</a></li>
+                <li><a href="/" class="nav-link">Dashboard</a></li>
             </ul>
              
         </div>

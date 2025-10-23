@@ -25,6 +25,18 @@ Route::get('/food-diary', [FoodDiaryController::class, 'index'])->name('food-dia
 Route::post('/food-diary/tambah', [FoodDiaryController::class, 'tambah'])->name('food-diary.tambah');
 Route::delete('/food-diary/hapus/{id}', [FoodDiaryController::class, 'hapus'])->name('food-diary.hapus');
 
+// ====pemantauan pertumbuhan ====///
+
+use App\Http\Controllers\PertumbuhanController;
+
+Route::get('/pemantauan-pertumbuhan', [PertumbuhanController::class, 'index'])->name('pemantauan');
+Route::post('/pemantauan-pertumbuhan', [PertumbuhanController::class, 'store'])->name('pemantauan.store');
+
+// === edukasi gizi ===//
+Route::get('/edukasi-gizi', function () {
+    return view('edukasi-gizi');
+})->name('edukasi-gizi');
+
 
 Route::get('/login', function () {
     return view('login');

@@ -18,7 +18,7 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Sarapan -->
         <div class="menu-card">
-            <img src="https://images.unsplash.com/photo-1584270354949-1f3a7c0d58b5?auto=format&fit=crop&w=800&q=80" alt="Sarapan Sehat" class="menu-img">
+            <img src="{{ asset('images/roti.png') }}" alt="Sarapan Sehat" class="menu-img">
             <div class="p-4">
                 <h3 class="text-2xl font-semibold text-green-700 mb-2">🍞 Sarapan Sehat</h3>
                 <p class="text-gray-600 text-base mb-3">
@@ -44,7 +44,7 @@
 
         <!-- Makan Malam -->
         <div class="menu-card">
-            <img src="https://images.unsplash.com/photo-1523983303491-4e25ef76cda0?auto=format&fit=crop&w=800&q=80" alt="Makan Malam Sehat" class="menu-img">
+            <img src="{{ asset('images/nyamm.png') }}" alt="Makan Malam Sehat" class="menu-img">
             <div class="p-4">
                 <h3 class="text-2xl font-semibold text-green-700 mb-2">🍚 Makan Malam Ringan</h3>
                 <p class="text-gray-600 text-base mb-3">

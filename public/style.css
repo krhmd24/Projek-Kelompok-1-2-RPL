@@ -125,3 +125,49 @@ tr:last-child td {
     border-bottom: none;
 }
 
+/* === Edukasi Gizi === */
+.article-card {
+    background: white;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+.article-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+.article-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.read-more {
+    color: #16a34a;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.read-more:hover {
+    color: #065f46;
+    text-decoration: underline;
+}
+
+/* === Gambar di Kartu Edukasi === */
+article-img {
+    width: 100%;              /* Lebar penuh dari kartu */
+    height: 180px;            /* Semua gambar tingginya sama */
+    object-fit: cover;        /* Potong gambar agar pas (tanpa merusak proporsi) */
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.menu-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1rem;
+    display: block;
+}
+
+
