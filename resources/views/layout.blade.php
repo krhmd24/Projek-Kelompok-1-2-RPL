@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
+<!DOCTYPE html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +10,13 @@
     <!-- Tailwind -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-    <!-- CSS Eksternal -->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
+    <!-- CSS Eksternal -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-
 </head>
+
 
 <body class="min-h-screen flex flex-col bg-gradient-to-br from-green-100 via-lime-50 to-emerald-100">
 
@@ -27,7 +27,7 @@
                 <span class="text-3xl">🌿</span> NutriCare
             </h1>
             
-            <ul <ul class="flex gap-6 text-lg">
+            <ul class="flex gap-6 text-lg">
     <li><a href="/" class="nav-link">Dashboard</a></li>
     <li><a href="/kalkulator-gizi" class="nav-link">Kalkulator Gizi</a></li>
     <li><a href="/menu-sehat" class="nav-link">Menu Sehat</a></li> 

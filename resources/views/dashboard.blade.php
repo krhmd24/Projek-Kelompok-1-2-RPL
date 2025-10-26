@@ -22,13 +22,13 @@
                 <p class="text-gray-600">Hitung kebutuhan kalori, protein, dan karbohidrat harianmu.</p>
             </a>
 
-            <a href="#" class="feature-card">
+            <a href="/menu-sehat" class="feature-card">
                 <div class="icon bg-lime-100 text-lime-700">🥗</div>
                 <h3 class="text-xl font-semibold text-green-700 mb-2">Menu Sehat</h3>
                 <p class="text-gray-600">Temukan inspirasi makanan sehat dan lezat sesuai kebutuhanmu.</p>
             </a>
 
-            <a href="#" class="feature-card">
+            <a href="food-diary" class="feature-card">
                 <div class="icon bg-emerald-100 text-emerald-700">📘</div>
                 <h3 class="text-xl font-semibold text-green-700 mb-2">Food Diary</h3>
                 <p class="text-gray-600">Catat makanan harian dan pantau status gizi tubuhmu.</p>

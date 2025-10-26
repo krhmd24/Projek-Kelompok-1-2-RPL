@@ -137,11 +137,14 @@ tr:last-child td {
     transform: translateY(-6px);
     box-shadow: 0 12px 30px rgba(0,0,0,0.15);
 }
-.article-img {
+.edukasi {
     width: 100%;
-    height: 180px;
+    height: 240px; /* atau sesuaikan */
     object-fit: cover;
+    border-radius: 12px;
+    display: block;
 }
+
 .read-more {
     color: #16a34a;
     font-weight: 600;
@@ -153,21 +156,7 @@ tr:last-child td {
     text-decoration: underline;
 }
 
-/* === Gambar di Kartu Edukasi === */
-article-img {
-    width: 100%;              /* Lebar penuh dari kartu */
-    height: 180px;            /* Semua gambar tingginya sama */
-    object-fit: cover;        /* Potong gambar agar pas (tanpa merusak proporsi) */
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
-}
 
-.menu-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 1rem;
-    display: block;
-}
+/* === Gambar di Kartu Edukasi === */
 
 
