@@ -116,7 +116,7 @@ table {
     border-spacing: 0;
 }
 th, td {
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid #86f0a9;
 }
 th {
     font-weight: 600;
@@ -126,37 +126,54 @@ tr:last-child td {
 }
 
 /* === Edukasi Gizi === */
-.article-card {
-    background: white;
-    border-radius: 1.5rem;
-    overflow: hidden;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-}
-.article-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-}
-.edukasi {
-    width: 100%;
-    height: 240px; /* atau sesuaikan */
-    object-fit: cover;
-    border-radius: 12px;
-    display: block;
-}
-
-.read-more {
-    color: #16a34a;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-.read-more:hover {
-    color: #065f46;
-    text-decoration: underline;
-}
-
 
 /* === Gambar di Kartu Edukasi === */
 
+/* 🌿 Kategori Button Style */
+.kategori-btn {
+    background: #dcfce7;
+    color: #166534;
+    padding: 10px 24px;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.kategori-btn:hover {
+    background: #86efac;
+    transform: translateY(-2px);
+}
+
+.kategori-btn.active {
+    background: #16a34a;
+    color: rgb(167, 240, 191);
+    box-shadow: 0 4px 12px rgba(22,163,74,0.3);
+}
+
+/* 🌸 Artikel Card */
+.artikel img {
+    transition: transform 0.4s ease;
+}
+
+.artikel:hover img {
+    transform: scale(1.05);
+}
+
+.artikel a {
+    transition: color 0.3s ease;
+}
+
+.artikel a:hover {
+    color: #065f46;
+}
+
+/* 🌼 Responsif */
+@media (max-width: 768px) {
+    .kategori-btn {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+    }
+}
 

@@ -37,6 +37,12 @@ Route::get('/edukasi-gizi', function () {
     return view('edukasi-gizi');
 })->name('edukasi-gizi');
 
+//+++akses lokasi===//
+use App\Http\Controllers\LokasiController;
+
+Route::get('/akses-lokasi', [LokasiController::class, 'index'])->name('akses-lokasi');
+
+
 use App\Http\Controllers\AuthController;
 
 
