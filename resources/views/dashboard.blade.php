@@ -15,6 +15,18 @@
 
     <!-- 3 Fitur dengan Kotak -->
     <div class="bg-white/70 backdrop-blur-md shadow-lg rounded-3xl p-10 mx-auto max-w-5xl">
+        <div class="flex gap-8 mb-8">
+            <a href="food-diary" class="feature-card">
+                <div class="icon bg-emerald-100 text-emerald-700">📘</div>
+                <h3 class="text-xl font-semibold text-green-700 mb-2">Food Diary</h3>
+                <p class="text-gray-600">Catat makanan harian dan pantau status gizi tubuhmu.</p>
+            </a>
+            <a href="food-diary" class="feature-card">
+                <div class="icon bg-emerald-100 text-emerald-700">📘</div>
+                <h3 class="text-xl font-semibold text-green-700 mb-2">Food Diary</h3>
+                <p class="text-gray-600">Catat makanan harian dan pantau status gizi tubuhmu.</p>
+            </a>
+        </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <a href="/kalkulator-gizi" class="feature-card">
                 <div class="icon bg-green-100 text-green-700">🧮</div>
@@ -33,7 +45,9 @@
                 <h3 class="text-xl font-semibold text-green-700 mb-2">Food Diary</h3>
                 <p class="text-gray-600">Catat makanan harian dan pantau status gizi tubuhmu.</p>
             </a>
+            
         </div>
+        
     </div>
 </div>
 @endsection

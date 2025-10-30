@@ -37,12 +37,10 @@
     </button>
 </form>
 
-@if(isset($kalori))
 <div class="mt-12 bg-green-50 p-6 rounded-2xl shadow-md max-w-lg mx-auto text-center">
     <h3 class="text-2xl font-bold text-green-700 mb-4">💡 Hasil Perhitungan</h3>
     <p><strong>Kebutuhan Kalori:</strong> {{ number_format($kalori, 0) }} kkal/hari</p>
     <p><strong>Protein:</strong> {{ number_format($protein, 1) }} gram/hari</p>
     <p><strong>Karbohidrat:</strong> {{ number_format($karbo, 1) }} gram/hari</p>
 </div>
-@endif
 @endsection
