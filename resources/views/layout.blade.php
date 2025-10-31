@@ -34,6 +34,7 @@
     <li><a href="/food-diary" class="nav-link">Food Diary</a></li>
     <li><a href="/pemantauan-pertumbuhan" class="nav-link">Pemantauan</a></li>
     <li><a href="/edukasi-gizi" class="nav-link">Edukasi Gizi</a></li>
+    <li><a href="/akses-lokasi" class="nav-link">Akses Lokasi</a></li>
     
 
     {{-- Cek apakah user sudah login --}}
