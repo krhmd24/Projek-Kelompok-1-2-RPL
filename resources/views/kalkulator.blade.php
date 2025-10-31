@@ -37,6 +37,10 @@
     </button>
 </form>
 
+<<<<<<< HEAD
+=======
+{{-- Tampilkan hasil hanya jika variabel tersedia --}}
+>>>>>>> df9df1e4b4421448939068a467c8e2732987f62c
 @if(isset($kalori))
 <div class="mt-12 bg-green-50 p-6 rounded-2xl shadow-md max-w-lg mx-auto text-center">
     <h3 class="text-2xl font-bold text-green-700 mb-4">💡 Hasil Perhitungan</h3>
